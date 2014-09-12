@@ -1,0 +1,16 @@
+{
+  "name": "resolves a single dependency",
+  "requested": {
+    "rack": ""
+  },
+  "resolved": [
+    {
+      "name": "rack",
+      "version": "1.1",
+      "dependencies": []
+    }
+  ],
+  "conflicts": [
+
+  ]
+}
