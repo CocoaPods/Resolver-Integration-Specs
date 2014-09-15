@@ -90,13 +90,13 @@
     },
     {
       "name": "activesupport",
-      "version": "3.0.0.beta",
+      "version": "3.0.0-beta",
       "dependencies": {
       }
     },
     {
       "name": "activesupport",
-      "version": "3.0.0.beta1",
+      "version": "3.0.0-beta1",
       "dependencies": {
       }
     }
@@ -127,18 +127,18 @@
     },
     {
       "name": "actionpack",
-      "version": "3.0.0.beta",
+      "version": "3.0.0-beta",
       "dependencies": {
-        "activesupport": "= 3.0.0.beta",
+        "activesupport": "= 3.0.0-beta",
         "rack": "~> 1.1",
         "rack-mount": ">= 0.5"
       }
     },
     {
       "name": "actionpack",
-      "version": "3.0.0.beta1",
+      "version": "3.0.0-beta1",
       "dependencies": {
-        "activesupport": "= 3.0.0.beta1",
+        "activesupport": "= 3.0.0-beta1",
         "rack": "~> 1.1",
         "rack-mount": ">= 0.5"
       }
@@ -168,17 +168,17 @@
     },
     {
       "name": "activerecord",
-      "version": "3.0.0.beta",
+      "version": "3.0.0-beta",
       "dependencies": {
-        "activesupport": "= 3.0.0.beta",
+        "activesupport": "= 3.0.0-beta",
         "arel": ">= 0.2"
       }
     },
     {
       "name": "activerecord",
-      "version": "3.0.0.beta1",
+      "version": "3.0.0-beta1",
       "dependencies": {
-        "activesupport": "= 3.0.0.beta1",
+        "activesupport": "= 3.0.0-beta1",
         "arel": ">= 0.2"
       }
     }
@@ -210,18 +210,18 @@
     },
     {
       "name": "actionmailer",
-      "version": "3.0.0.beta",
+      "version": "3.0.0-beta",
       "dependencies": {
-        "activesupport": "= 3.0.0.beta",
-        "actionmailer": "= 3.0.0.beta"
+        "activesupport": "= 3.0.0-beta",
+        "actionmailer": "= 3.0.0-beta"
       }
     },
     {
       "name": "actionmailer",
-      "version": "3.0.0.beta1",
+      "version": "3.0.0-beta1",
       "dependencies": {
-        "activesupport": "= 3.0.0.beta1",
-        "actionmailer": "= 3.0.0.beta1"
+        "activesupport": "= 3.0.0-beta1",
+        "actionmailer": "= 3.0.0-beta1"
       }
     }
   ],
@@ -258,13 +258,13 @@
     },
     {
       "name": "railties",
-      "version": "3.0.0.beta",
+      "version": "3.0.0-beta",
       "dependencies": {
       }
     },
     {
       "name": "railties",
-      "version": "3.0.0.beta1",
+      "version": "3.0.0-beta1",
       "dependencies": {
       }
     }
@@ -272,24 +272,24 @@
   "rails": [
     {
       "name": "rails",
-      "version": "3.0.0.beta",
+      "version": "3.0.0-beta",
       "dependencies": {
-        "activerecord": "= 3.0.0.beta",
-        "actionpack": "= 3.0.0.beta",
-        "actionmailer": "= 3.0.0.beta",
-        "activesupport": "= 3.0.0.beta",
-        "railties": "= 3.0.0.beta"
+        "activerecord": "= 3.0.0-beta",
+        "actionpack": "= 3.0.0-beta",
+        "actionmailer": "= 3.0.0-beta",
+        "activesupport": "= 3.0.0-beta",
+        "railties": "= 3.0.0-beta"
       }
     },
     {
       "name": "rails",
-      "version": "3.0.0.beta1",
+      "version": "3.0.0-beta1",
       "dependencies": {
-        "activerecord": "= 3.0.0.beta1",
-        "actionpack": "= 3.0.0.beta1",
-        "actionmailer": "= 3.0.0.beta1",
-        "activesupport": "= 3.0.0.beta1",
-        "railties": "= 3.0.0.beta1"
+        "activerecord": "= 3.0.0-beta1",
+        "actionpack": "= 3.0.0-beta1",
+        "actionmailer": "= 3.0.0-beta1",
+        "activesupport": "= 3.0.0-beta1",
+        "railties": "= 3.0.0-beta1"
       }
     }
   ],
@@ -326,7 +326,7 @@
     },
     {
       "name": "nokogiri",
-      "version": "1.3.0.1",
+      "version": "1.3.0-1",
       "dependencies": {
       }
     },
