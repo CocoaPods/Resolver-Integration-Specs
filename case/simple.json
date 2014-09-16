@@ -3,6 +3,7 @@
   "requested": {
     "rack": ""
   },
+  "base": [],
   "resolved": [
     {
       "name": "rack",
@@ -10,7 +11,5 @@
       "dependencies": []
     }
   ],
-  "conflicts": [
-
-  ]
+  "conflicts": []
 }

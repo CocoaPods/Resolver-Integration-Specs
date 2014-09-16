@@ -3,6 +3,7 @@
   "requested": {
     "actionpack": ""
   },
+  "base": [],
   "resolved": [
     {
       "name": "actionpack",
