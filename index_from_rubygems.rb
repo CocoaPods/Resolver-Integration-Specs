@@ -4,7 +4,7 @@ require 'json'
 require 'open-uri'
 require 'set'
 
-GEMS = %w(rails capybara bundler).freeze
+GEMS = %w(rails capybara bundler mail).freeze
 
 VERSION_PATTERN = /\A
   [0-9]+\.[0-9]+\.[0-9]+           (?# Number component)
@@ -63,7 +63,7 @@ specs = specs.group_by { |s| s['name'] }.values.map do |spec|
     {
       'name' => s['name'],
       'version' => coerce_to_semver(s['number']),
-      'dependencies' => coerce_dependencies_to_semver(Hash[s['dependencies']])
+      'dependencies' => coerce_dependencies_to_semver(s['dependencies'].sort_by(&:first))
     }
   end.uniq { |s| s['version'] }.sort_by { |s| Gem::Version.new(s['version']) }
   ]
