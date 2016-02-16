@@ -4,7 +4,7 @@ require 'json'
 require 'open-uri'
 require 'set'
 
-GEMS = %w(rails capybara bundler).freeze
+GEMS = %w(rails capybara bundler github-linguist).freeze
 
 VERSION_PATTERN = /\A
   [0-9]+\.[0-9]+\.[0-9]+           (?# Number component)
@@ -33,7 +33,7 @@ end
 
 def coerce_dependencies_to_semver(deps)
   dependencies = {}
-  deps.each do |name, req|
+  deps.sort_by(&:first).each do |name, req|
     dependencies[name] = req.split(',').map { |r| coerce_to_semver(r) }.join(',')
   end
   dependencies
@@ -63,7 +63,7 @@ specs = specs.group_by { |s| s['name'] }.values.map do |spec|
     {
       'name' => s['name'],
       'version' => coerce_to_semver(s['number']),
-      'dependencies' => coerce_dependencies_to_semver(Hash[s['dependencies']])
+      'dependencies' => coerce_dependencies_to_semver(s['dependencies'])
     }
   end.uniq { |s| s['version'] }.sort_by { |s| Gem::Version.new(s['version']) }
   ]
@@ -71,6 +71,6 @@ end
 
 specs = Hash[specs]
 
-json = JSON.pretty_generate(specs)
+json = JSON.generate(specs)
 
-File.open('index/rubygems.json', 'w') { |f| f.write json }
+File.open("index/rubygems-#{Date.today}.json", 'w') { |f| f.write json }
