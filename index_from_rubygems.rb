@@ -4,7 +4,7 @@ require 'json'
 require 'open-uri'
 require 'set'
 
-GEMS = %w(rails capybara bundler github-linguist).freeze
+GEMS = %w(chef).freeze
 
 VERSION_PATTERN = /\A
   [0-9]+\.[0-9]+\.[0-9]+           (?# Number component)
@@ -28,7 +28,7 @@ def coerce_to_semver(version)
   semver = parts[0..2].join('.')
   semver.sub!(/([a-zA-Z])/, '-\1')
   semver += '-' + parts[-1] if parts.size > 3
-  semver
+  semver.chomp(".")
 end
 
 def coerce_dependencies_to_semver(deps)
