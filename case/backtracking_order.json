@@ -1,0 +1,28 @@
+{
+  "name": "follows backtracking order of operations",
+  "index": "backtracking_order",
+  "requested": {
+    "cool-gem": "",
+    "weird-gem": ""
+  },
+  "base": [],
+  "resolved": [
+    {
+      "name": "cool-gem",
+      "version": "1.0.1",
+      "dependencies": []
+    },
+    {
+      "name": "weird-gem",
+      "version": "0.2.0",
+      "dependencies": [
+        {
+          "name": "cool-gem",
+          "version": "1.0.1",
+          "dependencies": []
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}

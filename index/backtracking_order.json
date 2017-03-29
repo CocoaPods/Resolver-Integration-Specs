@@ -1,0 +1,37 @@
+{
+  "cool-gem": [
+    {
+      "name": "cool-gem",
+      "version": "1.0.1",
+      "dependencies": {}
+    },
+    {
+      "name": "cool-gem",
+      "version": "0.0.1",
+      "dependencies": {}
+    }
+  ],
+  "weird-gem": [
+    {
+      "name": "weird-gem",
+      "version": "0.3.0",
+      "dependencies": {
+        "cool-gem": "<= 1.0.0"
+      }
+    },
+    {
+      "name": "weird-gem",
+      "version": "0.2.0",
+      "dependencies": {
+        "cool-gem": "> 0"
+      }
+    },
+    {
+      "name": "weird-gem",
+      "version": "0.1.0",
+      "dependencies": {
+        "cool-gem": "= 0.0.1a"
+      }
+    }
+  ]
+}
