@@ -1,36 +1,74 @@
 {
-  "cool-gem": [
+  "a": [
     {
-      "name": "cool-gem",
-      "version": "1.0.1",
-      "dependencies": {}
+      "name": "a",
+      "version": "1.0.0",
+      "dependencies": {
+        "b": ">= 0"
+      }
     },
     {
-      "name": "cool-gem",
+      "name": "a",
       "version": "0.0.1",
-      "dependencies": {}
+      "dependencies": {
+      }
     }
   ],
-  "weird-gem": [
+  "b": [
     {
-      "name": "weird-gem",
-      "version": "0.3.0",
+      "name": "b",
+      "version": "1.0.1",
       "dependencies": {
-        "cool-gem": "<= 1.0.0"
+        "c": "= 1.0.0"
       }
     },
     {
-      "name": "weird-gem",
-      "version": "0.2.0",
+      "name": "b",
+      "version": "1.0.0",
       "dependencies": {
-        "cool-gem": "> 0"
+        "c": ">= 0"
+      }
+    }
+  ],
+  "c": [
+    {
+      "name": "c",
+      "version": "2.0.0",
+      "dependencies": {
       }
     },
     {
-      "name": "weird-gem",
-      "version": "0.1.0",
+      "name": "c",
+      "version": "1.0.0",
       "dependencies": {
-        "cool-gem": "= 0.0.1a"
+      }
+    }
+  ],
+  "x": [
+    {
+      "name": "x",
+      "version": "1.1.0",
+      "dependencies": {
+        "c": "~> 2.0.0"
+      }
+    },
+    {
+      "name": "x",
+      "version": "1.0.0",
+      "dependencies": {
+        "a": "< 1.0"
+      }
+    },
+    {
+      "name": "x",
+      "version": "0.0.2",
+      "dependencies": {
+      }
+    },
+    {
+      "name": "x",
+      "version": "0.0.1",
+      "dependencies": {
       }
     }
   ]
