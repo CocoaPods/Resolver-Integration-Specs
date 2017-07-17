@@ -1,0 +1,29 @@
+{
+  "name": "selects a prerelease version when specified",
+  "index": "prerelease_version",
+  "requested": {
+    "a": "= 2.0.0.beta1",
+    "b": ""
+  },
+  "base": [],
+  "resolved": [
+    {
+      "name": "b",
+      "version": "1.0.0",
+      "dependencies": [
+        {
+          "name": "a",
+          "version": "2.0.0.beta1",
+          "dependencies": [
+            {
+              "name": "c",
+              "version": "1.0.0",
+              "dependencies": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "conflicts": []
+}
