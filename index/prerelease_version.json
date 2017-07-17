@@ -1,0 +1,32 @@
+{
+  "a": [
+    {
+      "name": "a",
+      "version": "1.0.0",
+      "dependencies": {}
+    },
+    {
+      "name": "a",
+      "version": "2.0.0.beta1",
+      "dependencies": {
+        "c": ">= 1.0.0"
+      }
+    }
+  ],
+  "b": [
+    {
+      "name": "b",
+      "version": "1.0.0",
+      "dependencies": {
+        "a": ">= 1.0.0"
+      }
+    }
+  ],
+  "c": [
+    {
+      "name": "c",
+      "version": "1.0.0",
+      "dependencies": {}
+    }
+  ]
+}
