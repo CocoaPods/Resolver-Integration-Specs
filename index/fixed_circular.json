@@ -30,6 +30,11 @@
         "foo": ">= 0",
         "bar": ">= 0"
       }
+    },
+    {
+      "name": "circular_app",
+      "version": "0.0.1",
+      "dependencies": []
     }
   ]
 }
