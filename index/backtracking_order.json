@@ -1,0 +1,75 @@
+{
+  "a": [
+    {
+      "name": "a",
+      "version": "1.0.0",
+      "dependencies": {
+        "b": ">= 0"
+      }
+    },
+    {
+      "name": "a",
+      "version": "0.0.1",
+      "dependencies": {
+      }
+    }
+  ],
+  "b": [
+    {
+      "name": "b",
+      "version": "1.0.1",
+      "dependencies": {
+        "c": "= 1.0.0"
+      }
+    },
+    {
+      "name": "b",
+      "version": "1.0.0",
+      "dependencies": {
+        "c": ">= 0"
+      }
+    }
+  ],
+  "c": [
+    {
+      "name": "c",
+      "version": "2.0.0",
+      "dependencies": {
+      }
+    },
+    {
+      "name": "c",
+      "version": "1.0.0",
+      "dependencies": {
+      }
+    }
+  ],
+  "x": [
+    {
+      "name": "x",
+      "version": "1.1.0",
+      "dependencies": {
+        "c": "~> 2.0.0"
+      }
+    },
+    {
+      "name": "x",
+      "version": "1.0.0",
+      "dependencies": {
+        "a": "< 1.0"
+      }
+    },
+    {
+      "name": "x",
+      "version": "0.0.2",
+      "dependencies": {
+      }
+    },
+    {
+      "name": "x",
+      "version": "0.0.1",
+      "dependencies": {
+      }
+    }
+  ]
+}
