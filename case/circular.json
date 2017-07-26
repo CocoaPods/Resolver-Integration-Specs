@@ -1,5 +1,5 @@
 {
-  "name": "detects circular depedencies",
+  "name": "detects circular dependencies",
   "index": "circular",
   "requested": {
     "circular_app": ""
