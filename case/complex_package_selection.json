@@ -10,57 +10,338 @@
     {
       "name": "actioncable",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "actionpack",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "nio4r",
+          "version": "2.5.8",
+          "dependencies": []
+        },
+        {
+          "name": "websocket-driver",
+          "version": "0.7.5",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "actionmailbox",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "actionpack",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activejob",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activerecord",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activestorage",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "mail",
+          "version": "2.7.1",
+          "dependencies": []
+        },
+        {
+          "name": "net-imap",
+          "version": "0.3.1",
+          "dependencies": []
+        },
+        {
+          "name": "net-pop",
+          "version": "0.1.2",
+          "dependencies": []
+        },
+        {
+          "name": "net-smtp",
+          "version": "0.3.2",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "actionmailer",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "actionpack",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "actionview",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activejob",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "mail",
+          "version": "2.7.1",
+          "dependencies": []
+        },
+        {
+          "name": "net-imap",
+          "version": "0.3.1",
+          "dependencies": []
+        },
+        {
+          "name": "net-pop",
+          "version": "0.1.2",
+          "dependencies": []
+        },
+        {
+          "name": "net-smtp",
+          "version": "0.3.2",
+          "dependencies": []
+        },
+        {
+          "name": "rails-dom-testing",
+          "version": "2.0.3",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "actionpack",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "actionview",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "rack",
+          "version": "2.2.4",
+          "dependencies": []
+        },
+        {
+          "name": "rack-test",
+          "version": "2.0.2",
+          "dependencies": []
+        },
+        {
+          "name": "rails-dom-testing",
+          "version": "2.0.3",
+          "dependencies": []
+        },
+        {
+          "name": "rails-html-sanitizer",
+          "version": "1.4.3",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "actiontext",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "actionpack",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activerecord",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activestorage",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "globalid",
+          "version": "1.0.0",
+          "dependencies": []
+        },
+        {
+          "name": "nokogiri",
+          "version": "1.13.8",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "actionview",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "builder",
+          "version": "3.2.4",
+          "dependencies": []
+        },
+        {
+          "name": "erubi",
+          "version": "1.11.0",
+          "dependencies": []
+        },
+        {
+          "name": "rails-dom-testing",
+          "version": "2.0.3",
+          "dependencies": []
+        },
+        {
+          "name": "rails-html-sanitizer",
+          "version": "1.4.3",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "activejob",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "globalid",
+          "version": "1.0.0",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "activemodel",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "activerecord",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "activemodel",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "activestorage",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "actionpack",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activejob",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activerecord",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "marcel",
+          "version": "1.0.2",
+          "dependencies": []
+        },
+        {
+          "name": "mini_mime",
+          "version": "1.1.2",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "activesupport",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "concurrent-ruby",
+          "version": "1.1.10",
+          "dependencies": []
+        },
+        {
+          "name": "i18n",
+          "version": "1.12.0",
+          "dependencies": []
+        },
+        {
+          "name": "minitest",
+          "version": "5.16.3",
+          "dependencies": []
+        },
+        {
+          "name": "tzinfo",
+          "version": "2.0.5",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "benchmark-ips",
@@ -95,7 +376,63 @@
     {
       "name": "derailed_benchmarks",
       "version": "2.1.2",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "benchmark-ips",
+          "version": "2.10.0",
+          "dependencies": []
+        },
+        {
+          "name": "dead_end",
+          "version": "4.0.0",
+          "dependencies": []
+        },
+        {
+          "name": "get_process_mem",
+          "version": "0.2.7",
+          "dependencies": []
+        },
+        {
+          "name": "heapy",
+          "version": "0.2.0",
+          "dependencies": []
+        },
+        {
+          "name": "memory_profiler",
+          "version": "1.0.0",
+          "dependencies": []
+        },
+        {
+          "name": "mini_histogram",
+          "version": "0.3.1",
+          "dependencies": []
+        },
+        {
+          "name": "rack",
+          "version": "2.2.4",
+          "dependencies": []
+        },
+        {
+          "name": "rack-test",
+          "version": "2.0.2",
+          "dependencies": []
+        },
+        {
+          "name": "rake",
+          "version": "13.0.6",
+          "dependencies": []
+        },
+        {
+          "name": "ruby-statistics",
+          "version": "3.0.0",
+          "dependencies": []
+        },
+        {
+          "name": "thor",
+          "version": "1.2.1",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "erubi",
@@ -110,32 +447,73 @@
     {
       "name": "get_process_mem",
       "version": "0.2.7",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "ffi",
+          "version": "1.15.5",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "globalid",
       "version": "1.0.0",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "heapy",
       "version": "0.2.0",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "thor",
+          "version": "1.2.1",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "i18n",
       "version": "1.12.0",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "concurrent-ruby",
+          "version": "1.1.10",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "loofah",
       "version": "2.19.0",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "crass",
+          "version": "1.0.6",
+          "dependencies": []
+        },
+        {
+          "name": "nokogiri",
+          "version": "1.13.8",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "mail",
       "version": "2.7.1",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "mini_mime",
+          "version": "1.1.2",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "marcel",
@@ -175,22 +553,46 @@
     {
       "name": "net-imap",
       "version": "0.3.1",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "net-protocol",
+          "version": "0.1.3",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "net-pop",
       "version": "0.1.2",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "net-protocol",
+          "version": "0.1.3",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "net-protocol",
       "version": "0.1.3",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "timeout",
+          "version": "0.3.0",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "net-smtp",
       "version": "0.3.2",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "net-protocol",
+          "version": "0.1.3",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "nio4r",
@@ -200,7 +602,18 @@
     {
       "name": "nokogiri",
       "version": "1.13.8",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "mini_portile2",
+          "version": "2.8.0",
+          "dependencies": []
+        },
+        {
+          "name": "racc",
+          "version": "1.6.0",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "racc",
@@ -215,32 +628,158 @@
     {
       "name": "rack-test",
       "version": "2.0.2",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "rack",
+          "version": "2.2.4",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "rails",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "actioncable",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "actionmailbox",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "actionmailer",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "actionpack",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "actiontext",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "actionview",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activejob",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activemodel",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activerecord",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activestorage",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "bundler",
+          "version": "2.3.23",
+          "dependencies": []
+        },
+        {
+          "name": "railties",
+          "version": "7.0.4",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "rails-dom-testing",
       "version": "2.0.3",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "nokogiri",
+          "version": "1.13.8",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "rails-html-sanitizer",
       "version": "1.4.3",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "loofah",
+          "version": "2.19.0",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "rails_iowaicon",
       "version": "1.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "rails",
+          "version": "7.0.4",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "railties",
       "version": "7.0.4",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "actionpack",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "activesupport",
+          "version": "7.0.4",
+          "dependencies": []
+        },
+        {
+          "name": "method_source",
+          "version": "1.0.0",
+          "dependencies": []
+        },
+        {
+          "name": "rake",
+          "version": "13.0.6",
+          "dependencies": []
+        },
+        {
+          "name": "thor",
+          "version": "1.2.1",
+          "dependencies": []
+        },
+        {
+          "name": "zeitwerk",
+          "version": "2.6.1",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "rake",
@@ -265,12 +804,24 @@
     {
       "name": "tzinfo",
       "version": "2.0.5",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "concurrent-ruby",
+          "version": "1.1.10",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "websocket-driver",
       "version": "0.7.5",
-      "dependencies": []
+      "dependencies": [
+        {
+          "name": "websocket-extensions",
+          "version": "0.1.5",
+          "dependencies": []
+        }
+      ]
     },
     {
       "name": "websocket-extensions",
