@@ -46,7 +46,7 @@ specs = []
 loop do
   size = gems.size
   (gems ^ downloaded_gems).each_slice(200) do |g|
-    specs += JSON.load URI.open("http://bundler.rubygems.org/api/v1/dependencies.json?gems=#{g.join(',')}")
+    specs += JSON.load URI.open("https://rubygems.org/api/v1/dependencies.json?gems=#{g.join(',')}")
   end
   downloaded_gems.merge(gems)
 
