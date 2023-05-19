@@ -7,6 +7,7 @@ require 'bundler/compact_index_client/gem_parser'
 
 GEMS = %w(chef).freeze
 EXCLUDED_GEMS = %w().freeze
+EXCLUDED_GEM_VERSIONS = {}.freeze
 
 VERSION_PATTERN = /\A
   [0-9]+\.[0-9]+\.[0-9]+           (?# Number component)
@@ -62,6 +63,9 @@ loop do
 
           version, platform, dependencies, meta_dependencies = parser.parse(line)
           next unless platform.nil?
+
+          excluded_versions = EXCLUDED_GEM_VERSIONS[g] || []
+          next if excluded_versions.include?(version)
 
           meta_dependencies.each do |name, reqs|
             if %w(ruby rubygems).include?(name)
