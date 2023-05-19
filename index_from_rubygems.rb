@@ -3,6 +3,7 @@
 require 'json'
 require 'open-uri'
 require 'set'
+require 'bundler/compact_index_client/gem_parser'
 
 GEMS = %w(chef).freeze
 
@@ -33,8 +34,8 @@ end
 
 def coerce_dependencies_to_semver(deps)
   dependencies = {}
-  deps.sort_by(&:first).each do |name, req|
-    dependencies[name] = req.split(',').map { |r| coerce_to_semver(r) }.join(',')
+  deps.sort_by(&:first).each do |name, reqs|
+    dependencies[name] = reqs.map { |r| coerce_to_semver(r) }.join(',')
   end
   dependencies
 end
@@ -42,20 +43,41 @@ end
 gems = Set.new(GEMS)
 downloaded_gems = Set.new
 specs = []
+parser = Bundler::CompactIndexClient::GemParser.new
 
 loop do
   size = gems.size
-  (gems ^ downloaded_gems).each_slice(200) do |g|
-    specs += JSON.load URI.open("https://rubygems.org/api/v1/dependencies.json?gems=#{g.join(',')}")
-  end
-  downloaded_gems.merge(gems)
+  (gems ^ downloaded_gems).each do |g|
+    if g == "ruby"
+      specs << { "name" => g, "number" => Gem.ruby_version.to_s, "dependencies" => [] }
+    elsif g == "rubygems"
+      specs << { "name" => g, "number" => Gem::VERSION, "dependencies" => [] }
+    else
+      URI.open("https://rubygems.org/info/#{g}") do |f|
+        f.each_line do |line|
+          next if line == "---\n"
 
-  gems.merge(specs.flat_map { |s| s['dependencies'].map(&:first) })
+          version, platform, dependencies, meta_dependencies = parser.parse(line)
+          next unless platform.nil?
+
+          meta_dependencies.each do |name, reqs|
+            if %w(ruby rubygems).include?(name)
+              dependencies << [name, reqs.map(&:strip)]
+            end
+          end
+
+          gems.merge(specs.flat_map { |s| dependencies.map(&:first) })
+          specs << { "name" => g, "number" => version, "dependencies" => dependencies }
+        end
+      end
+    end
+
+    downloaded_gems.add(g)
+  end
 
   break if gems.size == size
 end
 
-specs.reject! { |s| s['platform'] != 'ruby' }
 specs.uniq! { |s| [s['name'], s['number']] }
 specs.sort_by! { |s| s['name'].downcase }
 specs = specs.group_by { |s| s['name'] }.values.map do |spec|
