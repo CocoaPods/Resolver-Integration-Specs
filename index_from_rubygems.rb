@@ -5,8 +5,8 @@ require 'open-uri'
 require 'set'
 require 'bundler/compact_index_client/gem_parser'
 
-GEMS = %w(chef).freeze
-EXCLUDED_GEMS = %w().freeze
+GEMS = %w(inspec).freeze
+EXCLUDED_GEMS = %w(yaml-safe_load_stream2 yaml-safe_load_stream yaml-safe_load_stream3 recursive-open-struct yajl-ruby excon hashdiff jsonpath dry-configurable dry-struct dry-types inspec-core train-aws train-habitat train-winrm train faraday_middleware rake mongo progress_bar rake cookstyle activesupport).freeze
 EXCLUDED_GEM_VERSIONS = {}.freeze
 
 VERSION_PATTERN = /\A
