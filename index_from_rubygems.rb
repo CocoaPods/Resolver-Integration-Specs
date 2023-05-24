@@ -6,6 +6,8 @@ require 'set'
 require 'bundler/compact_index_client/gem_parser'
 
 GEMS = %w(chef).freeze
+EXCLUDED_GEMS = %w().freeze
+EXCLUDED_GEM_VERSIONS = {}.freeze
 
 VERSION_PATTERN = /\A
   [0-9]+\.[0-9]+\.[0-9]+           (?# Number component)
@@ -48,6 +50,8 @@ parser = Bundler::CompactIndexClient::GemParser.new
 loop do
   size = gems.size
   (gems ^ downloaded_gems).each do |g|
+    next if EXCLUDED_GEMS.include?(g)
+
     if g == "ruby"
       specs << { "name" => g, "number" => Gem.ruby_version.to_s, "dependencies" => [] }
     elsif g == "rubygems"
@@ -60,11 +64,16 @@ loop do
           version, platform, dependencies, meta_dependencies = parser.parse(line)
           next unless platform.nil?
 
+          excluded_versions = EXCLUDED_GEM_VERSIONS[g] || []
+          next if excluded_versions.include?(version)
+
           meta_dependencies.each do |name, reqs|
             if %w(ruby rubygems).include?(name)
               dependencies << [name, reqs.map(&:strip)]
             end
           end
+
+          dependencies.reject! {|d| EXCLUDED_GEMS.include?(d.first) }
 
           gems.merge(specs.flat_map { |s| dependencies.map(&:first) })
           specs << { "name" => g, "number" => version, "dependencies" => dependencies }
